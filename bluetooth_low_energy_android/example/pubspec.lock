@@ -19,10 +19,11 @@ packages:
   bluetooth_low_energy_platform_interface:
     dependency: "direct main"
     description:
-      name: bluetooth_low_energy_platform_interface
-      sha256: "5af74eb8f97a896dfdbcff2da284d4fe5b4e2e49ebb2f46f826ac1810f66e4d7"
-      url: "https://pub.dev"
-    source: hosted
+      path: bluetooth_low_energy_platform_interface
+      ref: legacy
+      resolved-ref: dcf172a475e4148f251e4976fbc066a8cf7d7186
+      url: "https://github.com/nsNeruno/bluetooth_low_energy.git"
+    source: git
     version: "5.0.2"
   boolean_selector:
     dependency: transitive
