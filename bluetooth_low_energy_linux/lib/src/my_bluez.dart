@@ -70,7 +70,11 @@ extension BlueZDeviceX on BlueZDevice {
   }
 
   ManufacturerSpecificData? get myManufacturerSpecificData {
-    final entry = manufacturerData.entries.lastOrNull;
+    MapEntry<BlueZManufacturerId, List<int>>? entry;
+    final entries = manufacturerData.entries;
+    if (entries.isNotEmpty) {
+      entry = entries.last;
+    }
     if (entry == null) {
       return null;
     }
